@@ -1,0 +1,26 @@
+{
+  "name": "social-network",
+  "version": "1.0.0",
+  "description": "social network database design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zydc2010/social-network.git"
+  },
+  "author": "Declan Zhao",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/zydc2010/social-network/issues"
+  },
+  "homepage": "https://github.com/zydc2010/social-network#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  },
+  "dependencies": {
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.2.9"
+  }
+}
