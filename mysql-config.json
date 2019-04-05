@@ -1,0 +1,12 @@
+{
+  "username": "root",
+  "password": "qwertyuiop",
+  "database": "social_network_204_G8",
+  "host": "127.0.0.1",
+  "port": 3306,
+  "dialect": "mysql",
+  "define": {
+    "timestamps": true
+  },
+  "logging": true
+}
