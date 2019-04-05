@@ -8,5 +8,5 @@
   "define": {
     "timestamps": true
   },
-  "logging": true
+  "logging": false
 }
