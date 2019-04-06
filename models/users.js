@@ -18,7 +18,8 @@ module.exports = (sequelize, Sequelize) => {
       allowNull: false,
       validate: {
         isEmail: true
-      }
+      },
+      unique: true
     },
     name: {
       type: Sequelize.STRING
@@ -31,6 +32,13 @@ module.exports = (sequelize, Sequelize) => {
   });
 
   User.associate = (models) => {
+    // has posts
+    User.hasMany(models.Post, {
+      as: 'Posts',
+      foreignKey: 'userId',
+      sourceKey: 'userId'
+    });
+
     // joined groups
     User.belongsToMany(models.Group, {
       as: 'Groups',
@@ -65,6 +73,14 @@ module.exports = (sequelize, Sequelize) => {
       through: 'UsersFollowers',
       foreignKey: 'userId',
       otherKey: 'followerUserId'
+    });
+
+    // following users
+    User.belongsToMany(User, {
+      as: 'FollowingUsers',
+      through: 'UsersFollowers',
+      foreignKey: 'followerUserId',
+      otherKey: 'userId'
     });
   };
 

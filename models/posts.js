@@ -57,6 +57,14 @@ module.exports = (sequelize, Sequelize) => {
       foreignKey: 'postId',
       otherKey: 'responsePostId'
     });
+
+    // parent post
+    Post.belongsToMany(Post, {
+      as: 'ParentPost',
+      through: 'PostResponses',
+      foreignKey: 'responsePostId',
+      otherKey: 'postId'
+    });
   };
 
   return Post;
