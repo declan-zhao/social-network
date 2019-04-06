@@ -22,6 +22,7 @@
   "dependencies": {
     "lodash": "^4.17.11",
     "mysql2": "^1.6.5",
+    "prettyjson": "^1.2.1",
     "sequelize": "^5.2.9"
   }
 }

@@ -5,6 +5,9 @@
   "host": "127.0.0.1",
   "port": 3306,
   "dialect": "mysql",
+  "pool": {
+    "idle": 1
+  },
   "define": {
     "timestamps": true
   },
