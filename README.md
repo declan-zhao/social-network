@@ -13,7 +13,7 @@ The user interface is based on command line. And there are a couple of commands 
 #### Install Node.js
 
 - The steps to install `Node.js` on macOS can be found in the link => [Install Node.js on macOS](https://nodejs.org/en/download/package-manager/#macos).
-- The steps to install `Node.js` on Debian and Ubuntu based Linux distributions can be found in the link [Install Node.js on Debian/Ubuntu](https://github.com/nodesource/distributions/blob/master/README.md#deb).
+- The steps to install `Node.js` on Debian and Ubuntu based Linux distributions can be found in the link => [Install Node.js on Debian/Ubuntu](https://github.com/nodesource/distributions/blob/master/README.md#deb).
 - For other OS, follow this link => [Install Node.js](https://nodejs.org/en/download/current/). Windows is not recommended.
 
 #### Check Node.js and npm
@@ -155,7 +155,7 @@ create a new post with author -u, topic -t and content -c, or respond to a read/
 
 - `sng8 post -u 'user5' -p 7 -c 'This is a response to an unread post.'`:
   - `user5` tries to respond an unread post #7 created by another user with content `This is a response to an unread post.`.
-  - post not owned by user must be read before responding, see [read](#read--like--unlike) sample usage section below.
+  - post not owned by the user must be read before responding, see [read](#read--like--unlike) sample usage section below.
   - sample output:
 
     ```JSON
