@@ -43,7 +43,7 @@ const createSampleData = async () => {
       userName: 'nu1',
       email: 'nu1@sn.com',
       name: 'newUser1',
-      birthDate: new Date(1986, 12, 26)
+      birthDate: new Date(1985, 12, 26)
     }], {
       validate: true
     });
