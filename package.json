@@ -2,9 +2,12 @@
   "name": "social-network",
   "version": "1.0.0",
   "description": "social network database design",
-  "main": "index.js",
+  "main": "sng8/sng8.js",
+  "bin": {
+    "sng8": "sng8/sng8.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sn": "sng8/sng8.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,7 @@
     "eslint": "^5.16.0"
   },
   "dependencies": {
+    "commander": "^2.20.0",
     "lodash": "^4.17.11",
     "mysql2": "^1.6.5",
     "prettyjson": "^1.2.1",
