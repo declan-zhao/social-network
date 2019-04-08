@@ -54,7 +54,9 @@ The user interface is based on command line. And there are a couple of commands 
 
 ### Main Command
 
-- `sng8`, which stands for social network group 8
+- `sng8`, which stands for social network group 8.
+  - note: ensure you follow the [setup](#setup).
+- In case that `sng8` does not work: use `sng8/sng8.js`
 
 ### Sub Commands
 
@@ -299,7 +301,7 @@ create a new user with username -u, email -e, name -n and birth date -b
 
 - `sng8 create -u 'newuser' -e 'nu@sn.com' -n 'newuser' -b '1987/06/15'`:
   - create a new user with username `newuser`, email `nu@sn.com`, name `newuser` and birth date `1987/06/15`.
-  - Notes:
+  - notes:
     - `username` must be unique.
     - `email` must be unique and valid.
     - `birth date` must be valid.
